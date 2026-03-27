@@ -1,55 +1,54 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>BrandonHirsh.com</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+<html lang="en">
+<head>
+    <title>Brandon Hirsh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal website of Brandon Hirsh, Finance Director at American Express." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-loading">
+    <div class="bg-animation"></div>
+    <div id="wrapper">
+        <main class="card glass">
+            <header>
+                <div class="avatar">
+                    <img src="images/profilepic.jpg" alt="Brandon Hirsh" />
+                </div>
+                <h1>Brandon Hirsh</h1>
+                <p class="subtitle">Finance Director @ American Express<br>Emory University, Class of 2020</p>
+            </header>
+            <footer>
+                <ul class="actions">
+                    <li>
+                        <a href="https://www.linkedin.com/in/BrandonHirsh" class="button" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="button" aria-label="Email Me">
+                            <i class="fa-regular fa-envelope"></i> Email Me
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </main>
+        
+        <footer id="footer">
+            <p>&copy; Brandon Hirsh</p>
+        </footer>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/profilepic.jpg" alt="" /></span>
-							<h1>Brandon Hirsh</h1>
-							<p>Finance Director @ American Express
-								<br>
-							Emory University, Class of 2020</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/BrandonHirsh" class="fa-linkedin">LinkedIn</a></li>
-								<li><a href="contact.html" class="fa-envelope-o">Email Me</a></li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Brandon Hirsh</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.remove('is-loading');
+            }, 100);
+        });
+    </script>
+</body>
 </html>

@@ -1,54 +1,55 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>BrandonHirsh.com</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+<html lang="en">
+<head>
+    <title>Contact | Brandon Hirsh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Brandon Hirsh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-loading">
+    <div class="bg-animation"></div>
+    <div id="wrapper">
+        <main class="card glass">
+            <header class="contact-header">
+                <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                <h2>Get in Touch</h2>
+            </header>
+            
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlezbvno" method="post">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea rows="4" name="message" id="message" placeholder="Your message here..." required></textarea>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                
+                <button type="submit" class="button primary">Submit</button>
+            </form>
+        </main>
+        
+        <footer id="footer">
+            <p>&copy; Brandon Hirsh</p>
+        </footer>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlezbvno" method="post">
-						  <fieldset id="fs-frm-inputs">
-						    <label for="full-name">Full Name</label>
-						    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-						    <label for="email-address">Email Address</label>
-						    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-						    <label for="message">Message</label>
-						    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-						    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-						  </fieldset>
-						  <input type="submit" value="Submit">
-						</form>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Brandon Hirsh</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.remove('is-loading');
+            }, 100);
+        });
+    </script>
+</body>
 </html>
