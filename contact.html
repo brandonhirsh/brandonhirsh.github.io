@@ -7,39 +7,46 @@
     <meta name="description" content="Contact Brandon Hirsh" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-loading">
-    <div class="bg-animation"></div>
-    <div id="wrapper">
-        <main class="card glass">
-            <header class="contact-header">
-                <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back</a>
-                <h2>Get in Touch</h2>
+    <div class="page-container">
+        <nav class="top-nav">
+            <div class="logo">BH.</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+
+        <main class="document-card fade-in">
+            <header class="hero contact-hero">
+                <h1>Get in Touch</h1>
+                <p class="subtitle">Looking forward to hearing from you.</p>
             </header>
             
-            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlezbvno" method="post">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlezbvno" method="post" class="minimal-form">
                 <div class="form-group">
                     <label for="full-name">Full Name</label>
-                    <input type="text" name="name" id="full-name" placeholder="First and Last" required>
+                    <input type="text" name="name" id="full-name" required>
                 </div>
                 <div class="form-group">
                     <label for="email-address">Email Address</label>
-                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required>
+                    <input type="email" name="_replyto" id="email-address" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea rows="4" name="message" id="message" placeholder="Your message here..." required></textarea>
+                    <textarea rows="4" name="message" id="message" required></textarea>
                 </div>
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 
-                <button type="submit" class="button primary">Submit</button>
+                <button type="submit" class="button-minimal">Send Message &rarr;</button>
             </form>
         </main>
         
-        <footer id="footer">
+        <footer>
             <p>&copy; Brandon Hirsh</p>
         </footer>
     </div>
@@ -48,7 +55,7 @@
         window.addEventListener('load', function() {
             setTimeout(function() {
                 document.body.classList.remove('is-loading');
-            }, 100);
+            }, 50);
         });
     </script>
 </body>

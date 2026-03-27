@@ -7,38 +7,44 @@
     <meta name="description" content="Personal website of Brandon Hirsh, Finance Director at American Express." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Use Inter to mimic the clean typography of wongmjane -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-loading">
-    <div class="bg-animation"></div>
-    <div id="wrapper">
-        <main class="card glass">
-            <header>
-                <div class="avatar">
-                    <img src="images/profilepic.jpg" alt="Brandon Hirsh" />
-                </div>
+    <div class="page-container">
+        <!-- Navigation Header mimicking Jane's minimalist top bar -->
+        <nav class="top-nav">
+            <div class="logo">BH.</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Main Document Area -->
+        <main class="document-card fade-in">
+            <header class="hero">
+                <img src="images/profilepic.jpg" alt="Brandon Hirsh" class="profile-pic" />
                 <h1>Brandon Hirsh</h1>
-                <p class="subtitle">Finance Director @ American Express<br>Emory University, Class of 2020</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/BrandonHirsh" aria-label="LinkedIn" class="icon-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="contact.html" aria-label="Email Me" class="icon-link"><i class="fa-regular fa-envelope"></i></a>
+                </div>
             </header>
-            <footer>
-                <ul class="actions">
-                    <li>
-                        <a href="https://www.linkedin.com/in/BrandonHirsh" class="button" aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="button" aria-label="Email Me">
-                            <i class="fa-regular fa-envelope"></i> Email Me
-                        </a>
-                    </li>
-                </ul>
-            </footer>
+
+            <section class="details-section">
+                <span class="section-label">CURRENTLY</span>
+                <p>Finance Director <span class="light-text">@ American Express</span></p>
+                <div class="divider"></div>
+                <span class="section-label">EDUCATION</span>
+                <p>Emory University <span class="light-text">Class of 2020</span></p>
+            </section>
         </main>
         
-        <footer id="footer">
+        <footer>
             <p>&copy; Brandon Hirsh</p>
         </footer>
     </div>
@@ -47,7 +53,7 @@
         window.addEventListener('load', function() {
             setTimeout(function() {
                 document.body.classList.remove('is-loading');
-            }, 100);
+            }, 50);
         });
     </script>
 </body>
